@@ -1,0 +1,160 @@
+<!--
+  Generated template for the OrderInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>邀请订单-已完成</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+ 
+<ion-content class="order-info-scroll">
+  <div class="order-info-tishi">
+    <p>
+      <ion-icon name="gonggao"></ion-icon>
+      已出票，表示本订单已完成~
+    </p>
+  </div>
+  <ion-card class="order-info-card1">
+    <ion-card-header>
+      <h3><i>07-06</i> <em>11:35</em>发起 - <i>5</i>位邀请对象 </h3>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-slides  pager="false">
+        <ion-slide>
+            <img src="assets/imgs/material/tx2.jpg" alt="">
+            <span>已拒绝</span>
+            <p>刘涛</p>
+        </ion-slide>
+        <ion-slide>
+            <img src="assets/imgs/material/tx3.jpg" alt="">
+            <span>已应邀</span>
+            <p>刘昊然</p>
+         
+        </ion-slide>
+        <ion-slide>
+            <img src="assets/imgs/material/tx4.jpg" alt="">
+            <span>已拒绝</span>
+            <p>黄宗泽</p>
+        </ion-slide>
+        <ion-slide>
+            <img src="assets/imgs/material/tx5.jpg" alt="">
+            <span>已拒绝</span>
+            <p>林心如</p>
+        </ion-slide>
+        <ion-slide>
+            <img src="assets/imgs/material/tx6.jpg" alt="">
+            <span>已拒绝</span>
+            <p>邓紫棋</p>
+        </ion-slide>
+      </ion-slides>
+      <!-- <ion-slides pager="false">
+        <ion-slide *ngFor="let item of union;let i = index" tappable (click)="categoryList(i)">
+          <button ion-button [style.background-color]="colorArr[i]">{{item.name}}</button>
+        </ion-slide>
+      </ion-slides> -->
+
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="order-info-card2">
+    <ion-card-header>
+      <h4>购买套餐</h4>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="order-info-card2-div">
+          <p>2人舒适间</p>
+          <p>有效期<i>2016-01-13</i>至<i>2018-07-15</i> </p>
+          <p>星空私人影院</p>
+      </div>
+      <img src="assets/imgs/move/move13.jpg" alt="">
+      <div class="clean"></div>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="order-info-card3">
+    <ion-card-header>
+      <div class="order-info-card3-div">
+        <p>票数量 &nbsp;：&nbsp;<i>1</i>张</p>
+        <p>验证码 &nbsp;：&nbsp;<i>******</i></p>
+      </div>
+  
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/imgs/zl/QR-code.png" alt="">
+      <span>
+        <ion-icon name="tishi"></ion-icon>
+        已成功出票
+      </span>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="order-info-card4">
+    <ion-card-header>
+      <div class="order-info-card4-div">
+          <h4>某私人影院名称</h4>
+          <p>
+            <ion-icon name="dizhi"></ion-icon>
+          这里是详情地址
+          </p>
+      </div>
+      
+      <img src="assets/imgs/wd/phone.png" alt="">
+      <img src="assets/imgs/wd/location.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <h4>邀请已付</h4>
+      <span>￥ <i>77</i> </span>
+      <p>票价总计&nbsp;：&nbsp;￥<i>78</i>&nbsp;(<em>1</em>张)</p>
+      <p>AB制付款&nbsp;：&nbsp;我付<i>77</i>元，对方付<em>1</em>元</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="order-info-card5">
+    <ion-card-header>
+      在线客服
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        车有票在线客服
+        <ion-icon name="xiaohuisefanhuijian"></ion-icon>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="order-info-card6 xuzhi">
+      <ion-card-header>
+          <h3>购票须知</h3>
+      </ion-card-header>
+      <ion-card-content>
+          
+              <h5>观影须知</h5>
+              <p>1.请在影票有效期内到达影院现场，到影院指定位置取票。<br/>
+                2.如现场无法取票，请联系影院工作人员处理。<br/>
+                3.购票时如遇特殊情况，请及时联系车有票人工客服咨询。<br/>
+
+              </p>
+              <h5>预约规则</h5>
+              <p>1.邀请方和应邀方预约观影，须遵从车有票预约规则：
+                  邀请方发起邀请流程：先选择影票/套餐、影院商家；再选择邀请对象；最后确认提交订单并付款。成功发起邀请后，需等待对方（应邀方）应邀，即付余下的应邀金额。<br/>
+                  2.邀请方可以选择一个或多个邀请对象，若有多个对象应邀时，按时间优先原则，先应邀成功的对象则成功预约，成功预约即表示成功下单。<br/>
+                  3.如邀请方发出邀请，无人成功应邀，直至超过影票/套餐有效时间，则本次邀请、应邀信息为过期状态，应邀方不可应邀。<br/>
+                  4.邀请方和应邀方须遵从影票/套餐期限的时间原则，须在其有效期内成功预约，否则下单失败；成功预约即下单后，预约双方须有效期内，前往影院观影。<br/>
+                  
+                </p>
+              <h5>过期说明</h5>
+              <p>
+                  邀请方、应邀方订单过期主要原因说明如下：<br/>
+                  (1)邀请方发出邀请信息后，应邀方无应答，直至影票/套餐过期（无应答是指错过或忽视对方发起的邀请信息，不作应邀信息操作，直至影票过期）。<br/>
+                  (2)邀请方发出邀请信息后，应邀方选择拒绝应邀TA。<br/>
+                  (3)当邀请方选择多个邀请对象时，应邀方遵从时间优先原则，第一时间确认应邀的对象应邀成功后，即预约成功。其他应邀对象的邀请信息过期，无法应邀。
+              </p>
+            
+            
+      
+      </ion-card-content>
+  </ion-card>
+
+</ion-content>

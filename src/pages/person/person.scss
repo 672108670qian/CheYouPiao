@@ -1,0 +1,270 @@
+page-person {
+  ion-header{
+    
+    // background-color: rgba(0,0,0,0);
+    ion-navbar{
+      position: absolute;
+
+      z-index: 10000;
+      // background: opacify($color: #000000, $amount: 0)
+    }
+    .toolbar-background-md, .toolbar-background-ios {
+      // background: -webkit-linear-gradient(left, #38c4f2 0%, #4867f4 100%);
+      // background:red;
+      opacity: 0;
+    }
+    
+}
+.gr-title{
+  height: 220px;
+  width: 100%;
+  background-image:url(../../assets/imgs/material/tx2.jpg);
+  background-size:cover;
+  position: absolute;
+  z-index: 5;
+  // top: 0px;
+  overflow: hidden;
+  // float: left;
+  padding: 12px ;
+  
+  
+  .gr-mengban{
+      position: absolute;
+      height: 220px;
+      width: 100%;
+      bottom: 0px;
+      left: 0px;
+      background: rgba(72,103,244,0.6);
+      z-index: 10;
+
+  }
+  .gr-xinxi{
+      width: 100%;
+      height: aoto;
+      padding:0px 0px ;
+      margin-top: 60px;
+      position: absolute;
+      left: 0px;  
+      z-index: 11;
+
+
+      .gr-xinxi-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 3px;
+        border: 2px solid rgba(255,255,255,0.5);
+        border-radius:5px; 
+        float: left;
+        margin-right: 12px;
+        margin-left: 12px;
+
+      }
+      .item-icon{
+        margin-top: 8px;
+      img{
+        width: 20px;
+        height: 17px;
+      }
+      }
+   h3{
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: #ffffff;
+    // margin-top:13px; 
+    display: inline-block;
+    margin: 0px 0px 0px 12px；
+  
+
+
+  }
+  button{
+    width: 70px;
+    height: 25px;
+    font-size: 1.3rem;
+    background: none;
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
+    color:#ffffff;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0px 2px;
+
+  }
+
+  p{
+    // height: 14px;
+    font-size: 1.3rem;
+    line-height: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+    ion-avatar {
+      width:20px;
+      height: 17px;
+      display:inline-block;
+      // margin-top: 6px;
+      img{
+          width:20px;
+          height: 17px;
+          
+          display: inline-block;
+          background:#4867f4;
+          border-radius: 3px;
+          border: none;
+          //display: inline-block;
+          //width:20px; height:20px;
+          background: url(../../assets/imgs/che.png) no-repeat center;
+          background-size:cover ;
+          white-space:nowrap;
+          letter-spacing: -1em;
+          text-indent: -99em;
+          color: transparent;
+          vertical-align:middle; 
+          /* IE7 */
+          *text-indent: 0;
+          // *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '\3000');
+          //margin-top: 5px;
+        }
+    }
+    
+    
+
+
+
+    i{
+      width:20px;
+      height: 17px;
+      display: inline-block;
+     
+      border-radius: 3px;
+      color: white;
+      font-style: normal;
+      text-align: center;
+    }
+    
+    small{
+      float: right;
+      font-size:1.2rem ;
+      color: #999;
+      font-weight: normal;
+    }
+  }
+       
+
+  //男女标志
+.nan{
+
+  display: inline-block;
+  width: 40px;
+  border-radius: 3px;
+  text-align: center;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: white;
+  background:#9eb0ff;
+
+}
+.nv{
+
+  display: inline-block;
+  width: 40px;
+  border-radius: 3px;
+  text-align: center;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: white;
+  background:#ffacd3;
+
+}
+
+}  
+  
+}
+.gr-content{
+  position: absolute;
+  top:220px;
+  width: 100%;
+  padding: 10px;
+  ion-card{
+    border-radius:5px; 
+    ion-card-header{
+      h4{
+        font-size: 1.6rem;
+        color:3333;
+        font-weight: bold;
+        padding-left: 7px;
+        border-left: 3px solid #4867f4; 
+      }
+      p{
+        margin-top: 15px;
+        i{
+          font-style: normal;
+        }
+        button{
+          background: #fff;
+          ion-icon{
+            color: #999999;
+            font-size: 1.4rem;
+            
+          }
+        }
+       
+      }
+     
+    }
+    ion-card-content{
+      span{
+        background: #f8f8f8;
+        // background: red;
+        border-radius:20px; 
+        margin-right: 10px;
+        padding:0px 3px;
+        line-height: 30px;
+        color: #666;
+      }
+    }
+
+  }
+
+
+}
+  .button-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 0px;
+    padding-left: 4px;
+    background: #fff;
+
+    button{
+      width:49% ;
+      height: 44px;
+      margin: 0px;
+      background: #fff;
+      // background: gold;
+      color: #CCC;
+      display: block;
+      float: left;
+      ion-avatar{
+        img{
+          width: 30px;
+          width: 30px;
+        }
+      }
+      .activated{
+        background: #666 !important;
+      }
+   
+    }
+
+
+    .button-xian{
+      background: #eee;
+    }
+   
+
+  }
+
+
+}

@@ -1,0 +1,236 @@
+<!--
+  Generated template for the MessagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header mode="md">
+  <ion-navbar>
+    <ion-title>私信</ion-title>
+    <!--<ion-buttons right>-->
+<!--      <button ion-button icon-only (click)="onShowSideMenu()">
+        <ion-icon name="md-menu">显示</ion-icon>
+      </button>-->
+      <ion-buttons end>
+        <button ion-button icon-only color="light" (click)="onShowSideMenu()">
+          <ion-icon name="md-menu"></ion-icon>
+        </button>
+      </ion-buttons>
+
+  </ion-navbar>
+
+
+</ion-header>
+
+
+
+<!-- <ion-content class="padding-20 list-avatar-page content">
+  <div class=" fixed-content" >
+    
+      <ion-list> -->
+
+
+        <!-- <ion-item class="item  shadow color-fc">
+          <ion-avatar item-left>
+            <img src="assets/imgs/sx_1.png">
+          </ion-avatar>
+          <div class="item-inner">
+            <div  class="input-wrapper">
+              <h2>车有票</h2>
+              <p>你已经成功举报飞飞飞的动态</p>
+            </div>
+
+            <span right>5分钟前</span>
+            <ion-note>5分钟前</ion-note>
+          </div>
+        </ion-item> -->
+
+
+
+        <!-- <ion-item  class="color-fc  shadow">
+
+          <ion-avatar item-left>
+            <img src="assets/imgs/sx_2.png">
+          </ion-avatar>
+          <div class="item-inner">
+            <div  class="input-wrapper">
+              <h2>互动消息</h2>
+              <p>小可爱赞了你的动态</p>
+            </div> -->
+
+            <!--<span right>5分钟前</span>-->
+            <!-- <ion-note>5分钟前</ion-note>
+          </div>
+
+        </ion-item>
+
+        <ion-item  class="color-fc  shadow">
+          <ion-avatar item-left>
+            <img src="assets/imgs/sx_3.png">
+          </ion-avatar>
+          <div class="item-inner">
+            <div  class="input-wrapper">
+              <h2>我的邀请</h2>
+              <p>大长腿拒绝了你的邀请</p>
+            </div>
+            <ion-note>5分钟前</ion-note>
+          </div>
+        </ion-item>
+
+
+
+        <ion-item   class="color-fc  shadow">
+          <ion-avatar item-left>
+            <img src="assets/imgs/sx_4.png">
+          </ion-avatar>
+          <div class="item-inner">
+            <div  class="input-wrapper">
+              <h2>我的应邀</h2>
+              <p>女神发来观影邀请：《泰坦尼克号》</p>
+            </div>
+            <ion-note>5分钟前</ion-note>
+          </div>
+        </ion-item>
+
+        <ion-item class=" shadow" >
+          <ion-avatar item-left>
+            <img src="assets/imgs/material/tx2.jpg" alt=""/>
+          </ion-avatar>
+          <div class="item-inner">
+            <div  class="input-wrapper">
+              <h2>刘涛</h2>
+              <p>你在干嘛？</p>
+            </div>
+            <ion-note>5分钟前</ion-note>
+          </div>
+        </ion-item>
+
+        <ion-item class=" shadow"  >
+          <ion-avatar item-left>
+            <img src="assets/imgs/material/tx.jpg">
+          </ion-avatar>
+          <div class="item-inner">
+            <div  class="input-wrapper">
+              <h2>胡歌</h2>
+            </div>
+            <ion-note>5分钟前</ion-note>
+          </div>
+        </ion-item>
+
+        <ion-item  class="shadow" >
+          <ion-avatar item-left>
+            <img src="assets/imgs/sx_4.png">
+          </ion-avatar>
+          <div class="item-inner">
+            <div  class="input-wrapper">
+              <h2>我的应邀</h2>
+              <p>女神发来观影邀请：《泰坦尼克号》</p>
+            </div>
+            <ion-note>5分钟前</ion-note>
+          </div>
+        </ion-item> -->
+        <!-- <ion-item (click)="openChat()">
+          <ion-avatar item-left>
+            <img src="assets/imgs/material/tx2.jpg">
+          </ion-avatar>
+        <h2>Hancock</h2>
+        <p>If at first you don’t succeed, call it version 1.0</p>
+        </ion-item>
+
+      </ion-list>
+    
+
+
+  </div> -->
+
+
+
+
+
+
+
+  <!--  <ion-slide>
+      <ion-list>
+        <ion-item >
+          <ion-avatar item-left>
+            <img src="">
+          </ion-avatar>
+          <h2>hahhahah</h2>
+          <p>聊天文字</p>
+        </ion-item>
+      </ion-list>
+    </ion-slide>-->
+   <!-- <ion-slide>
+      <ion-list>
+        <ion-item >
+          <ion-avatar item-left>
+            <img src="">
+          </ion-avatar>
+          <h2>hahhahah</h2>
+          <p>聊天文字</p>
+        </ion-item>
+      </ion-list>
+    </ion-slide>-->
+
+<!-- </ion-content> -->
+<ion-content class="chats">
+
+  <!-- 显示今天的消息 -->
+  <ion-list>
+    <ion-list-header>今天</ion-list-header>
+    <!-- 点击的时候跳转界面 -->
+    <ion-item *ngFor="let message of messages" (click)="goChatPage()">
+      <ion-avatar item-start>
+        <img [src]="message.imageUrl">
+      </ion-avatar>
+      <h2>{{message.title}}</h2>
+      <p>{{message.lastMessage}}</p>
+      <ion-note item-end>{{message.timestamp | date:'HH:mm:ss'| lowercase}}</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>昨天</ion-list-header>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/material/tx2.jpg">
+      </ion-avatar>
+      <h2>大哥</h2>
+      <p>拉萨挺不错的。。。。</p>
+      <ion-note item-end>11:11</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/material/tx2.jpg">
+      </ion-avatar>
+      <h2>人事主管</h2>
+      <p>这次给你涨工资了。你查看下工资白条</p>
+      <ion-note item-end>11:11</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>前天</ion-list-header>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/material/tx2.jpg">
+      </ion-avatar>
+      <h2>祥</h2>
+      <p>下次我请客吃饭。。。。</p>
+      <ion-note item-end>11:11</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/material/tx2.jpg">
+      </ion-avatar>
+      <h2>涛</h2>
+      <p>什么时候回武汉？</p>
+      <ion-note item-end>11:11</ion-note>
+    </ion-item>
+  </ion-list>
+  <a  (click)="goChatPage()">前往下一页>传参</a>
+
+</ion-content>
+

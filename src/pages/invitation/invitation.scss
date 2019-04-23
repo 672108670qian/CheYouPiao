@@ -1,0 +1,194 @@
+page-invitation {
+    ion-content{
+     
+
+
+        .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+            border-color: #4867f4;
+            opacity: 1;
+
+            em{
+               color: #4867f4 !important;
+            }
+        }
+        
+
+        ion-segment {
+          background: #fff;
+          position: absolute;
+          z-index: 100;
+     
+          ion-segment-button{
+            // background: #fff;
+            em{
+              color: #444 !important;
+              font-weight: bold;
+              font-size: 1.4rem !important;
+            }
+          
+          }
+    
+        }
+        .segment-md .segment-button {
+            // background: #fff;
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+          border-bottom-color: rgba(0, 0, 0, 0.1);
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 4rem;
+          text-transform: uppercase;
+          color: #4867f4;
+         
+        }
+
+      } 
+
+      .invitation-item{
+        height:185px;
+        width: 100%;
+        padding: 0px 12px;
+        position: relative;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        .item-inner {
+            border-bottom: none !important;
+        }
+        ion-card-title{
+            height: 50px;
+            width: 100%;
+            border-bottom: 1px solid #eeeeee;
+            padding: 0px 12px;
+            position: absolute;
+            top: -2px;
+            right: 0px;
+            // padding:0px ;
+            background: #fff;
+            vertical-align: middle;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius:50%; 
+                margin-top:5px ;
+                margin-right: 12px;
+                float: left;
+                
+            }
+            h4{
+                color: #333;
+                font-size: 1.4rem;
+                line-height: 50px;
+                margin-left: 12px;
+
+            }
+            span{
+                color: #4867F4;
+                font-size:1.6rem; 
+                font-weight: bold;
+                display: inline-block;
+                top:15px;
+                right: 12px;
+            }
+            i,em{
+                font-style:normal; 
+            }
+           
+        }
+        .invitation-iteminfo{
+            height: 135px;
+            width: 100%;
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            padding: 12px 12px;
+            img{
+                height: 110px;
+                width: 80px;
+                margin-right: 12px;
+                float: left;
+                border-radius:3px; 
+            }   
+            .invitation-xinxi{
+                padding-top: 8px;
+              
+                i{
+                    font-style: normal;
+
+                }
+                h3{
+                    // display: inline-block;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    color: #333;
+                }
+                P{  
+                    color: #666;
+                }
+
+            }
+            
+           
+
+        }
+   
+
+        
+
+
+
+
+
+
+        // 规定每个状态的颜色
+        #yingyao{
+            color: #4867F4;
+        }
+
+        #xiaofei{
+            color: #ff4c4c;
+        }
+        #wancheng{
+            color: #b6b6b6;
+        }
+        #guoqi{
+            color: #666666;
+        }
+        #tuikuan{
+            color: #ffc64c;
+        }
+                                                                                                                                                                                         
+
+
+    }
+     // 普通item增加button的高度6689
+     .item-button{
+        height: 235px;
+        
+        .invitation-button{
+            border-top: 1px solid #eeeeee;
+            
+            height: 50px;
+            width: 100%;
+            position: absolute;
+            top:184px;
+            right: 0px;
+            button{
+                height: 40px;
+                width: 90px;
+             
+                float: right;
+                background: #fff;
+                border: 1px solid #ccc;
+                border-radius:20px;
+                line-height: 35px;
+                font-size: 1.5rem;
+                color: #333;
+                margin-right:12px; 
+                margin-top: 5px;
+
+            }
+        }
+    }
+  
+    
+}

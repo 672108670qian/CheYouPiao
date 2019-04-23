@@ -1,0 +1,59 @@
+page-payment {
+    .payment-card{
+        text-align: center;
+        margin-top:8px; 
+        ion-card-header{
+            p{
+                font-size: 1.3rem;
+                color: #999;
+            }
+        }
+        ion-card-content{
+           
+           
+
+            h2{
+                i{
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    // color: #333;
+                    // font-weight: bold; 
+                }
+                font-size: 2.4rem;
+                color: #333;
+                font-weight: bold;
+            }
+        }
+      
+    
+    }
+    .payment-item{
+        
+        ion-avatar{
+            img{
+                border-radius:5px; 
+            }
+        }
+    }
+    .payment-item:last-child{
+        
+        .item-inner {
+            border-bottom: none;
+        }
+
+    }
+    .footer{
+        ion-buttons {
+            width: 100%;
+            margin: 0px;
+            button{
+                width: 100%;
+                margin: 0px;
+                border-radius:0PX; 
+                font-weight: bold;
+                background: #38C4F2;
+            }
+        }
+    }
+
+}

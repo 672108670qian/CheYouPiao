@@ -1,0 +1,155 @@
+<!--
+  Generated template for the AffirmPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>确认邀请订单</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+ 
+  <!-- <ion-scroll class="b"  style=" margin-top: 0px; margin-bottom: 50px;"> -->
+      <ion-card class="affirm-card1">
+        <ion-card-header>
+          2人舒适间
+        </ion-card-header>
+        <ion-card-content>
+          <div class="div1 affirm-dashed" >
+            <p><i>2016-01-13</i> 至 <i>2018-01-13</i> 有效 </p>
+            <p>星空私人影院</p>
+          </div>
+          <div class="div2 affirm-solid" >
+            <p>数量</p>
+            <span><i>1</i>张</span>
+          </div>
+          <div class="div3">
+            <p>票价小计</p>
+            <span><em> 78</em>元 * <i>1</i>张= <i>78</i> 元</span>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="affirm-card2">
+
+        <ion-card-content>
+         
+          <form>
+            <ion-list radio-group >
+            
+            
+              <ion-item>
+                  <ion-avatar item-start>
+                      <img src="assets/imgs/zl/AA.png">
+                    </ion-avatar>
+                <ion-label>
+                  <h2>AA付款方式</h2> 
+                  <span>两方（我方与对方）需付均等的观影订单费用</span>
+                </ion-label>
+                
+                <ion-radio value="payment1"></ion-radio>
+              </ion-item>
+            
+              <ion-item>
+                  <ion-avatar item-start>
+                      <img src="assets/imgs/zl/AB.png">
+                    </ion-avatar>
+                <ion-label>
+                  <h2>AB付款方式</h2>
+                  <span>根据对象不同，有如下两种方式提供您选择</span>
+                </ion-label>
+              
+           
+              </ion-item>
+            
+              <ion-item>
+                <ion-label> <i>【1】</i> 我付<em>多</em>，对方付<em>少</em> </ion-label>
+                <ion-radio value="payment2"></ion-radio>
+              </ion-item>
+            
+              <ion-item>
+                <ion-label> <i>【2】</i> 我付<em>少</em>，对方付<em>多</em> </ion-label>
+                <ion-radio value="payment3"></ion-radio>
+              </ion-item>
+
+
+            </ion-list>
+          </form>
+
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="affirm-card3 relative">
+        <ion-card-header>
+          您目前的手机号
+        </ion-card-header>
+        <ion-card-content>
+          <p>手机号仅用于生成订单，取票码不再以短信发送</p>
+          <span class="absolute">
+            15277668822
+            <ion-icon name="xiaohuisefanhuijian"></ion-icon>
+          </span>
+        </ion-card-content>
+      </ion-card>
+
+
+      
+      <ion-card class="affirm-card4 xuzhi">
+          <ion-card-header>
+              <h3>购票须知</h3>
+          </ion-card-header>
+          <ion-card-content>
+            <p>1.由于设备故障等不可抗力因素，存在少量场次取消的情况，会进行退票退款</p>
+            <p>2.由于影院系统不稳定等因素，存在出票失败的情况，会进行退款</p>
+            <p>3.取票码不再通过短信发送，任一方需取票，须向对方发出取票请求，经对方同意后，方可显示取票码，在订单详情中查看</p>
+            <p>4.咨询请点击<a href="">在线客服</a></p>
+            <p>5.下单即代表你同意《车有票用户协议》</p>
+            <!-- <p>1.由于设备故障等不可抗力因素，存在少量场次取消的情况，会进行退票退款</p>
+
+              2.由于影院系统不稳定等因素，存在出票失败的情况，会进行退款<br/>
+              3.取票码不再通过短信发送，任一方需取票，须向对方发出取票请求，经对方同意后，方可显示取票码，在订单详情中查看<br/>
+              4.咨询请点击<a href="">在线客服</a><br/>
+              5.下单即代表你同意《车有票用户协议》</p> -->
+
+         
+          
+          </ion-card-content>
+        </ion-card>
+        
+  <!-- </ion-scroll> -->
+
+
+
+
+
+</ion-content>
+
+
+<div class="footer">
+    <div class="footer-div">
+        <p>
+          <ion-icon name="tishi"></ion-icon>
+          不支持改签、退票
+        </p>
+        <p>
+          <ion-icon name="tishi"></ion-icon>
+          如果预约失败，可申请退款
+        </p>
+    </div>
+    <p class="footer-p">
+      应付
+      <em cyp-red>77</em>
+      <i> 元</i>
+     
+    </p>
+    <button (click)="gopayment()">
+      提交订单
+    </button>
+
+  
+    
+  </div>

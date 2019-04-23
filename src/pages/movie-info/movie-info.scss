@@ -1,0 +1,114 @@
+page-movie-info {
+    .movie-info-card{
+        height: 75px;
+        width: 100%;
+        div{
+            width: 65%;
+            float: left;
+            h3{
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: #333;
+                // width: 70%;
+                
+            }
+            p{
+                // width: 70%;
+                font-size: 1.3rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #999;
+            }
+        }
+        button{
+            
+            width:40px ;
+            height: 40px;
+            float: right;
+            margin-left:10px ;
+            // display: inline-block;
+            background: #fff;
+            padding: 0px;
+            
+            
+            img{
+                width:40px ;
+                height: 40px;
+            }
+        }
+        .card-header-ios{
+            padding: 12px;
+        }
+
+    }
+    .movie-info-list{
+        padding:10px 12px;
+        background: #fff;
+        h4{
+            font-size: 1.6rem;
+            color: #333;
+            font-weight: bold;
+            margin: 10px 10px 10px 0px; 
+            border-left:3px solid #4867f4;
+            padding-left: 8px;
+
+        }
+        .movie-info-item{
+            padding: 8px 0px 0px            ;
+
+            .label-ios {
+                margin:0px;
+                padding-bottom:8px;
+                img{
+                    width: 80px;
+                    height: 110px;
+                    float: left;
+                    margin-right: 12px;
+                    border-radius:3px; 
+                }
+                .movie-info-xinxi{
+                    line-height: 50px;
+                    // position: absolute;
+                    margin-left:93px; 
+                  
+             
+                    h3{
+                        font-size: 1.4rem;
+                        color: #333;
+                        font-weight: bold;
+                        margin-top: 10px;
+                    }
+                    span{
+                        font-size: 1.2rem;
+                        color: #4867F4;
+                        font-weight: bold;
+                        i{
+                            font-style: normal;
+                        }
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        color: #999;
+                        i{
+                            font-style: normal;
+                        }
+                    
+                 
+                    }
+                    button{
+                        width: 60px;
+                        height: 30px;
+                        border-radius: 15px;
+                        position: absolute;
+                        top: 50px;
+                        right: 0px;
+                        background:  -webkit-linear-gradient(left, #38c4f2 0%, #4867f4 100%);
+                        color: #fff;
+                    }
+                }
+               
+            }
+        }
+    }
+}

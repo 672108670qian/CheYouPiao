@@ -1,0 +1,400 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>附近动态</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngFor="let item of listData"> 
+    <ion-item> 
+      <ion-avatar item-left> 
+        <img [src]="item?.url"> 
+      </ion-avatar> 
+         {{item?.title}} 
+      </ion-item> 
+    </ion-list>
+  </ion-content> -->
+
+
+  <ion-header mode="md">
+
+    <ion-navbar class="relative">
+  
+      <!-- <ion-buttons left>
+        <button ion-button icon-only  (click)="onShowSideMenu()">
+          <ion-icon name="funnel"  ></ion-icon>
+        </button>
+      </ion-buttons> -->
+      <ion-segment [(ngModel)]="home" class="ion-segment-bule " mode="md">
+        <ion-segment-button value="hydt">
+          <em>会员动态</em>
+        </ion-segment-button>
+        <ion-segment-button value="fjdr">
+          <em>附近的人</em>
+        </ion-segment-button>
+        
+      </ion-segment>
+      
+     <ion-buttons right class="nav-icon absolute"  >
+        <button ion-button icon-only  (click)="goInvitation()" >
+          <ion-icon name="daohanglanshaixuan"style="font-size: 22px;"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content>
+    <!---------------------banner图--------------------------->
+    <div>
+  
+      <ion-slides pager #ionSlides loop="true" autoplay="1000" pager (ionSlideAutoplayStop)="autoPlay()">
+        <ion-slide>
+          <img src="assets/imgs/banner/banner.png"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/banner/banner2.png" />
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/banner/banner3.png" />
+        </ion-slide>
+      </ion-slides>
+    </div>
+  
+    <div (swipe)="swipeEvent($event)" class="padding-20"  >
+      <div [ngSwitch]="home">
+        <!------------------------会员动态--------------------------->
+        <div *ngSwitchCase="'hydt'">
+  
+          <ion-card class="dongtai relative">
+            <div class="dt1">
+              <div (click)='goperson()'>
+                <img src="assets/imgs/material/tx2.jpg" alt=""/>
+              </div>
+              <div>
+                <h4 (click)='goperson()'>刘涛</h4>
+                <button right class="btn-hh" (click)="presentActionSheet()">
+                  <ion-icon name="ios-more"></ion-icon>
+                </button>
+              </div>
+              <div>
+                <em class="nv">♂36</em>
+              </div>
+            </div>
+  
+            <div class=" dt2 relative">
+              <p>我想看电影诶</p>
+  
+              <div class="absolute span-hh">
+  
+                <span>11:22&nbsp;&nbsp;&nbsp;</span>
+                <span>16km &nbsp;&nbsp;&nbsp;</span>
+                <span>164阅读</span>
+              </div>
+            </div>
+  
+            <div class="dt3 absolute">
+              <div class="two-button">
+                <button >
+                  <ion-icon name="heart"> 520</ion-icon>
+                </button>
+                <span class="button-xian"></span>
+  
+                <button >
+                  <ion-icon name="mail"> 私信</ion-icon>
+                </button>
+              </div>
+            </div>
+          </ion-card>
+          <ion-card class="dongtai relative">
+            <div class="dt1">
+              <div>
+                <img src="assets/imgs/material/tx3.jpg" alt=""/>
+              </div>
+              <div>
+                <h4>刘昊然</h4>
+                <button right class="btn-hh" (click)="presentActionSheet()">
+                  <ion-icon name="ios-more"></ion-icon>
+                </button>
+              </div>
+              <div>
+                <em class="nan">♂25</em>
+              </div>
+            </div>
+  
+            <div class=" dt2 relative">
+              <div class="dt-neirong" >
+                <p>走！我带你去看我演的电影</p>
+                <ion-grid>
+                  <ion-row >
+                    <ion-col col-4>
+                        <img src="assets/imgs/material/s1.jpg" alt=""/>
+                    </ion-col>
+                    <ion-col col-4>
+                        <img src="assets/imgs/material/s2.jpg" alt=""/>
+                    </ion-col>
+                     <ion-col col-4>
+                        <img src="assets/imgs/material/s3.jpg" alt=""/>
+                    </ion-col>
+                  </ion-row> 
+                    <ion-row>
+                    <ion-col col-4>
+                        <img src="assets/imgs/material/s1.jpg" alt=""/>
+                    </ion-col>
+                    <ion-col col-4>
+                        <img src="assets/imgs/material/s2.jpg" alt=""/>
+                    </ion-col>
+                    <ion-col col-4>
+                        <img src="assets/imgs/material/s3.jpg" alt=""/>
+                    </ion-col>
+                    
+                  </ion-row> 
+                </ion-grid> 
+
+
+
+
+                
+
+                <!-- <div class="dt-img">
+                  <img src="assets/imgs/material/s1.jpg" alt=""/>
+                  <img src="assets/imgs/material/s2.jpg" alt=""/>
+                  <img src="assets/imgs/material/s3.jpg" alt=""/>
+                  <img src="assets/imgs/material/s4.jpg" alt=""/>
+                  <img src="assets/imgs/material/s5.jpg" alt=""/>
+                  <img src="assets/imgs/material/s6.jpg" alt=""/>
+                   <img src="assets/imgs/material/s7.jpg" alt=""/>
+                  <img src="assets/imgs/material/s9.jpg" alt=""/>
+     
+                </div> -->
+
+              </div>
+  
+              <div class=" span-hh">
+  
+                <span>11:22&nbsp;&nbsp;&nbsp;</span>
+               
+                <span>164阅读</span>
+              </div>
+            </div>
+  
+            <div class="dt3 absolute">
+              <div class="two-button">
+                <button >
+                  <ion-icon name="heart"> 520</ion-icon>
+                </button>
+                <span class=" xian-hom "></span>
+  
+                <button >
+                  <ion-icon name="mail"> 私信</ion-icon>
+                </button>
+              </div>
+            </div>
+          </ion-card>
+          <ion-card>
+  
+  
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+            <h2>我是首页</h2>
+          </ion-card>
+          <ion-list >
+            <button ion-item (click)="goperson()">
+              <ion-avatar item-left>
+                <img src="assets/icon/user.jpg">
+              </ion-avatar>
+              <h2>婷婷</h2>
+              <p>账号：18600001111</p>
+            </button>
+          </ion-list>
+          <button ion-button  (click)="goperson()"> 个人页面</button>
+          
+  
+        </div>
+  
+  
+  
+  
+        <!-- --------------附近的人------------------------>
+        <div *ngSwitchCase="'fjdr'" >
+  
+          <ion-card class="home-fjdr relative">
+  
+  
+            <div class="hf2">
+              <div class="hf1">
+                <img src="assets/imgs/material/tx.jpg" alt=""/>
+              </div>
+              <h4>胡歌</h4>
+              <p>
+                <em class="nan">♂28 </em>
+                <!--<ion-icon name="male"></ion-icon>-->
+                <small>2.63km</small></p>
+              <p>
+                <ion-icon >
+  
+                </ion-icon>
+                奥迪
+              </p>
+              <p>
+                <i>会</i>
+                <i style="background: #17ccbc">机</i>
+                <i style="background: #27b2e3">支</i>
+                <i style="background: #51e050">微</i>
+                <i style="background: #8e6bf9">主</i>
+                <i style="background: #17ccbc">身</i>
+                <i style="background: #f2602b">博</i>
+              </p>
+  
+            </div>
+            <!-- <div class="hf3 absolute" >
+              <div class="two-button">
+                <button  (click)="Alertshenfen()">
+                  <ion-icon name="people"> 邀TA</ion-icon>
+                </button>
+  
+                <span class="button-xian"></span>
+  
+                <button >
+                  <ion-icon name="mail"> 私信</ion-icon>
+                </button>
+              </div>
+            </div> -->
+          </ion-card>
+          <ion-card class="home-fjdr relative">
+  
+  
+            <div class="hf2">
+              <div class="hf1">
+                <img src="assets/imgs/material/tx3.jpg" alt=""/>
+              </div>
+              <h4>刘昊然最好的我们</h4>
+              <p>
+                <em class="nan">♂24 </em>
+                <!--<ion-icon name="male"></ion-icon>-->
+                <small>2.63km</small></p>
+              <p>
+                <ion-icon >
+  
+                </ion-icon>
+                奥迪
+              </p>
+              <p>
+                <i>会</i>
+                <i style="background: #17ccbc">机</i>
+                <i style="background: #27b2e3">支</i>
+                <i style="background: #51e050">微</i>
+                <i style="background: #8e6bf9">主</i>
+                <i style="background: #17ccbc">身</i>
+                <i style="background: #f2602b">博</i>
+              </p>
+  
+            </div>
+            <!-- <div class="hf3 absolute" >
+              <div class="two-button">
+                <button  (click)="Alertshenfen()">
+                  <ion-icon name="people"> 邀TA</ion-icon>
+                </button>
+  
+                <span class="xian-hom"></span>
+  
+                <button >
+                  <ion-icon name="mail"> 私信</ion-icon>
+                </button>
+              </div>
+            </div> -->
+          </ion-card>
+          <ion-card class="home-fjdr relative">
+  
+  
+            <div class="hf2">
+              <div class="hf1">
+                <img src="assets/imgs/material/tx3.jpg" alt=""/>
+              </div>
+              <h4>刘昊然最好的我们<small>2.63km&nbsp; 3分钟前</small></h4>
+              <p>
+                奥迪
+              </p>
+              <div>
+                <span>互联网</span>
+                <span>9-10k</span>
+                <span>174cm</span>
+              </div>
+            </div>
+            <!-- <div class="hf3 absolute" >
+              <div class="two-button">
+                <button >
+                  <ion-icon name="people"> 约TA</ion-icon>
+                </button>
+  
+                <span class="xian-hom"></span>
+  
+                <button >
+                  <ion-icon name="mail"> 私信</ion-icon>
+                </button>
+              </div>
+            </div> -->
+          </ion-card>
+          <ion-card class="home-card">
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  1 of 3
+                </ion-col>
+                <ion-col col-8>
+                  2 of 3 (wider)
+                </ion-col>
+                <ion-col>
+                  3 of 3
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  1 of 3
+                </ion-col>
+                <ion-col col-6>
+                  2 of 3 (wider)
+                </ion-col>
+                <ion-col>
+                  3 of 3
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+  
+          </ion-card>
+          <ion-card>
+  
+  
+            <h2 style="font-size: 1rem">附近的人  1</h2>
+            <h2 style="font-size: 2rem">附近的人  2</h2>
+            
+            <h2 style="font-size: 0.1rem">附近的人 0.1</h2>
+            <h2 style="font-size: 0.3rem">附近的人 0.5</h2>
+            <h2 style="font-size: 0.4rem">附近的人 1.5</h2>
+            <h2 style="font-size: 0.5rem">附近的人</h2>
+            <h2 style="font-size: 0.6rem">附近的人</h2>
+            <h2 style="font-size: 0.7rem">附近的人</h2>
+            <h2 style="font-size: 0.8rem">附近的人</h2>
+            <h2 style="font-size: 0.9rem">附近的人</h2>
+            <h2 style="font-size: 1rem">附近的人</h2>
+            <h2>附近的人</h2>
+            <h2>附近的人</h2>
+            <h2>附近的人</h2>
+  
+          </ion-card>
+        </div>
+      </div>
+    </div>
+   
+  </ion-content>
+  

@@ -1,0 +1,135 @@
+page-order {
+    .toolbar-title-md{
+        text-align: center;
+      }
+
+    
+   
+    
+      .order-ge{
+        padding-bottom: 0px;
+       
+        .dd-list{
+          // background: red;
+          margin: 0px;
+        }
+     
+        .grid{
+          padding: 0px;
+          .list-ios > .item-block:first-child {
+            border-top: 0px;
+          }
+       
+       .row{
+         margin-top: 9px;
+         background: white;
+         .yq{
+           height: 50px;
+           border-radius: 5px;
+           h2{
+            border-left: 4px solid #4867f4;
+          }  
+        }
+          .yy{
+           height: 50px;
+           border-radius: 5px;
+           h2{
+            border-left: 4px solid  #f68E4a;
+          }  
+        }
+       
+          
+           .button-inner{
+             color: #666666;
+           }
+           .item-inner {
+             padding-right: 8px;
+             border-bottom: none;
+           }
+    
+          h2{
+            font-size:1.6rem ;
+            font-weight: bold;
+            margin: 0px;
+            display: inline-block;
+            padding-left: 10px;
+          }
+         button{
+           margin: 0px;
+         }
+         
+      
+         
+       }
+       .yq-row{
+        margin-top: 0px;
+      }
+  
+
+
+        ion-col{
+          background-color: white;
+          overflow: hidden;
+    
+          button{
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            display: block;
+            img{
+              width: 30px;
+              height: 30px;
+              margin:5px auto 0px;
+            }
+            h4{
+              font-size: 1.2rem;
+              text-align: center;
+              color: #333333;
+              margin-top: 8px;
+              margin-bottom: 5px;
+            }
+    
+          }
+          .button-right{
+            display: inline-block;
+            // float: right;
+            width: 50%;
+            height: 20px;
+            padding: 0px;
+            text-align: right;
+            color: #999999;
+    
+          }
+        }
+    
+      }
+      .list-ios[inset],.list-md[inset]{
+        margin: 10px;
+        border-radius: 5px;
+        button{
+          span{
+            color: #999999;
+            font-size: 1.4rem;
+            display: inline-block;
+            text-align: right;
+            // float: right;
+            padding-top: 2px;
+          }
+        }
+      }
+      .item-md,.item-ios{
+        height: 50px;
+        //border-radius: 10px;
+        ion-avatar{
+          min-width: 24px;
+          min-height: 24px;
+          img{
+            height: 24px;
+            width: 24px;
+            border-radius: 0px;
+          }
+        }
+      }
+    }
+    
+}

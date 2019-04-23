@@ -1,0 +1,225 @@
+page-home {
+
+
+  ion-header{
+  
+    .toolbar .segment-md {
+      margin: 0 auto;
+      width: 1005;
+  }
+    
+      
+      ion-buttons{
+      
+        margin-top: 3px;
+        display: block;
+        float: right;
+        right: 12px;
+      }
+      .nav-icon{ 
+        display: block;
+        ion-icon{
+          font-size: 22rem;
+        }
+      }
+    
+  
+  }
+ 
+
+    .home-fjdr{
+  
+      height:107px ;
+      padding: 8px 12px;
+  
+  
+      .hf1 {
+        width: 100px;
+        height: 90px;
+        display: block;
+        float: left;
+        img {
+          width: 90px;
+          height: 90px;
+          border-radius: 3px;
+  
+        }
+      }
+      .hf2{
+        width:100%;
+        height:100px;
+        float: left;
+        display: block;
+        margin-bottom: 5px;
+  
+        h4{
+          font-weight: bolder;
+          font-size: 1.5rem;
+          color: #333;
+  
+  
+        }
+        p{
+          font-size: 1.4rem;
+          color: #666666;
+          margin-bottom: 5px;
+          margin-top: 5px;
+          ion-icon{
+            width:20px;
+            height: 17px;
+            display: inline-block;
+            background:#4867f4;
+            border-radius: 3px;
+            //display: inline-block;
+            //width:20px; height:20px;
+            background: url(../../assets/imgs/che.png) no-repeat center;
+            background-size:cover ;
+            white-space:nowrap;
+            letter-spacing: -1em;
+            text-indent: -99em;
+            color: transparent;
+            /* IE7 */
+            *text-indent: 0;
+            // *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '\3000');
+            //margin-top: 5px;
+          }
+  
+  
+          i{
+            width:20px;
+            height: 17px;
+            display: inline-block;
+            background: #f4ad26;
+            border-radius: 3px;
+            color: white;
+            font-style: normal;
+            text-align: center;
+  
+          }
+          small{
+            float: right;
+            font-size:1.2rem ;
+            color: #999;
+            font-weight: normal;
+          }
+        }
+        /* span{
+           font-style: normal;
+           border: #a3b3f9 1px solid;
+           border-radius: 3px;
+           color: #4867f4;
+           padding: 2px;
+           font-size:13px ;
+  
+         }*/
+  
+      }
+      .hf3{
+        height: 44px;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        .two-button{
+          border-top:#eeeeee 1px solid ;
+          height: 100%;
+          margin-left:5px ;
+          margin-right:5px ;
+        }
+  
+
+        /*  button{
+            background: none;
+            color:#999999 ;
+            font-size: 1.7rem;
+            width: 49%;
+            height: 44px;
+            margin: 0px;
+            display: inline-block;
+            float: left;
+            padding: 0px;
+  
+          }*/
+        button{
+          background: none;
+          color:#bbb ;
+          font-size: 1.5rem;
+          width: 49%;
+          height: 44px;
+          margin: 0px;
+          display: inline-block;
+          float: left;
+  
+        }
+  
+      }
+    }
+  
+    //男女标志
+    .nan{
+  
+      display: inline-block;
+      width: 40px;
+      border-radius: 3px;
+      text-align: center;
+      font-style: normal;
+      font-size: 1.3rem;
+      color: white;
+      background:#9eb0ff;
+  
+    }
+    .nv{
+  
+      display: inline-block;
+      width: 40px;
+      border-radius: 3px;
+      text-align: center;
+      font-style: normal;
+      font-size: 1.3rem;
+      color: white;
+      background:#ffacd3;
+    }
+  
+  
+  
+    ion-col{
+      border: 1px solid #ff3333;
+    }
+  .dongtai{
+  
+    .dt2{
+     
+   
+      .dt-neirong{
+        // background: yellow;
+        margin-bottom:2px;
+        .dt-img img{
+          width: 108px;
+          height: 108px;
+          display: inline-block;
+          margin-right:3px ;
+          margin-left:2px ;
+          margin-top: 3px;
+          margin-bottom:2px;
+          border-radius: 5px;
+  
+        }
+      }
+      
+
+      .span-hh{
+        width: 100%;
+        display: block;
+        bottom: 0px;
+       
+        
+        background: #ffffff;
+      }
+    }
+    
+  }
+
+  
+}
+  
+  

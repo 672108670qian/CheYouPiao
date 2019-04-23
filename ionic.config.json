@@ -1,0 +1,8 @@
+{
+  "name": "车有票",
+  "app_id": "com.cheyoupiao.app",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

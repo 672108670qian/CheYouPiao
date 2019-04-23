@@ -1,0 +1,243 @@
+page-order-info {
+    .order-info-scroll{
+        box-sizing: border-box;
+        i,em,span{
+            font-style: normal;
+        }
+        .order-info-tishi{
+            height: 25px;
+            background: rgba(255, 102, 102, 0.2);
+            padding: 0px 12px;
+            margin-bottom: 8px;
+            p{
+                margin: 0px;
+                font-size: 1.2rem;
+                color:#ff6666;
+                line-height: 25px;
+            }
+          
+
+        }
+        .order-info-card1{
+            height: 180px;
+            ion-card-header{
+                h3{
+                    border-left: 3px solid #4867f4;
+                    padding-left: 8px;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    color: #333;
+                }
+            }
+            ion-card-content{
+                ion-slides{
+                    ion-slide{
+                        width: 75px !important;
+                        margin-right:8px ;
+                        position: relative;
+                        img{
+                            width: 75px;
+                            height: 75px;
+                            border-radius: 3px;
+                            overflow: hidden;
+
+                        }
+                        span{
+                            position: absolute;
+                            top:55px;
+
+
+
+
+
+                            
+                            display: block;
+                            width: 75px;
+                            height: 20px;
+                            background: rgba($color: #000000, $alpha: 0.5);
+                            color: #fff;
+                            font-size: 1.3rem;
+                            border-radius:3px; 
+
+                        }
+                    }
+                }
+            }
+        }
+       
+        .order-info-card2{
+            height: 180px;
+            ion-card-header{
+                padding: 20px 12px;
+                h4{
+                    color: #333;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                  
+                }
+            }
+            ion-card-content{
+                // background: #4867f4;
+                .order-info-card2-div{
+                    width: 70%;
+                    float: left;
+                    // background: red;
+                    p{
+                        line-height: 25px;
+                        font-size: 1.3rem;
+                    }
+                }
+                
+              
+                img{
+                    height: 110px;
+                    width: 80px;
+                    float: right;
+                    border-radius:3px; 
+                }
+            }
+            
+        }
+        .order-info-card3{
+            height: 350px;
+            ion-card-header{
+                .order-info-card3-div{
+                    width: 230px;
+                    height: 70px;
+                    border-radius:3px;
+                    border: 1px solid #e3e3e3; 
+
+                    // text-align: center;
+                    margin: 0 auto;
+                    padding-left:25px;
+                    padding-top: 8px;
+                    line-height: 25px;
+                    p{
+                        
+                    } 
+                }
+    
+            }
+            ion-card-content{
+                text-align: center;
+                img{
+                    width: 180px;
+                    height: 180px;
+                    margin: 0 auto;
+                }
+                span{
+                    color: #ff6666;
+                    font-size: 1.2rem;
+                    display: block;
+                    margin: 16px 0px;
+                    ion-icon{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            
+        }
+        .order-info-card4{
+            height: 180px;
+            ion-card-header{
+                border-bottom: 1px #e3e3e3 dashed;
+                .order-info-card4-div{
+                    width: 60%;
+                    float: left;
+                    // background: red;
+                    h4{
+                        color: #333;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        color: #333;
+                    }
+                    p{
+                        color: #999;
+                        font-size: 1.2rem;
+                        color: #999;
+                    }
+                }
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius:50%; 
+                    float: right;
+                    margin-left:1.2rem ;
+                }
+                
+            }
+            ion-card-content{
+                padding-top: 10px;
+                position: relative;
+                
+                h4{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #333;
+                }
+                p{
+                    font-size: 1.3rem;
+                    color: #666;
+                    line-height: 30px;
+                }
+                span{
+                    position: absolute;
+                    top:10px;
+                    right:12px;
+                    font-size: 1.5rem;
+                    color: #ff6666;
+                    font-weight: bold;
+                }
+            }
+              
+        }
+        .order-info-card5{
+            height: 55px;
+            
+            ion-card-header{
+                width:40% ;
+                font-size: 1.5rem;
+                color: #333;
+                padding: 0px;
+                padding-left: 16px;
+                line-height: 55px;
+                font-weight: bold;
+                float: left;
+            }
+            ion-card-content{
+                width:44% ;
+                float: right;
+                padding-top: 15px;
+                text-align: right;
+                padding: 0px;
+                padding-right: 16px;
+                  line-height: 55px;
+                p{
+                    ion-icon{
+                        font-size: 1.2rem;
+                        color: #999;
+                    }
+                }
+            }
+            
+        }
+        
+        .order-info-card6{
+            ion-card-content{
+                h5{
+                    font-size:1.5rem;
+                    color: #666;
+                    font-weight: bold;
+                }
+                P{
+                    font-size:1.3rem;
+                    color: #999;
+                   
+                }
+            }
+        }
+
+
+
+    }
+}

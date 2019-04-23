@@ -1,0 +1,35 @@
+page-tab {
+    .tab-button {
+        &>ion-icon {
+          font-family: "Ionicons" !important;
+          /*指定在当前组件中的ion-icon使用的字体名称*/
+        }
+      }
+     
+
+// // $tab-color:这里自定义颜色
+// .tab-button[aria-selected=true] {
+//     color: $tab-color!important;
+//     .tab-button-icon {
+//       color: $tab-color!important;
+//     }
+//   }
+#myTabs{
+
+  ion-icon {
+    font-family:"Ionicons" !important;
+    font-size:28px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // background: red;
+  } 
+
+ }
+ .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+  // color: #488aff;
+  color: -webkit-linear-gradient(top, #38c4f2 0%, #4867f4 100%);
+}
+
+
+}

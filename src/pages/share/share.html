@@ -1,0 +1,274 @@
+<!--
+  Generated template for the SharePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- Segment in a header -->
+<ion-header noborder>
+    <ion-navbar>
+        <ion-title>
+          选择邀请对象
+        </ion-title>
+        <ion-buttons right class="nav-icon absolute"  >
+            <button ion-button icon-only  (click)="goInvitation()" >
+              <ion-icon name="daohanglanchehui" style="font-size: 22px;"></ion-icon>
+            </button>
+          </ion-buttons>
+      </ion-navbar>
+
+  </ion-header>
+  
+  <ion-content >
+     
+    <!-- <ion-toolbar> -->
+      <ion-segment class="ion-segment-bule " [(ngModel)]="share" mode="md">
+        <ion-segment-button value="lately">
+          <em> 最近联系</em>
+    
+        </ion-segment-button>
+        <ion-segment-button value="all">
+          <em> 全部好友</em>
+    
+        </ion-segment-button>
+      </ion-segment>
+      <!-- 提示性文字 -->
+
+      <span class="share-tishi">
+        <ion-icon name="tishi"></ion-icon>
+        每次发起邀请可选择1~5人次
+      </span>
+
+
+
+
+
+      <div class="fixed-content" style="margin-top: 0px; margin-bottom: 45px;">
+      </div>
+      <div class="scroll-content" style=" margin-top: 75px; margin-bottom: 45px;">
+    <!-- <ion-toolbar/> -->
+      <div (swipe)="swipeEvent($event)"   >
+          <div [ngSwitch]="share">
+            <!------------------------最近联系--------------------------->
+            <div *ngSwitchCase="'lately'">
+      
+         
+         
+             
+              <ion-list>
+            
+                  <ion-item class="share-item ">
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/material/tx2.jpg">
+                    </ion-avatar>
+                    <ion-label>刘涛</ion-label>
+                    <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                  </ion-item>
+                  <ion-item class="share-item">
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/material/tx2.jpg">
+                    </ion-avatar>
+                    <ion-label>刘涛</ion-label>
+                    <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                  </ion-item>
+                  <ion-item class="share-item">
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/material/tx2.jpg">
+                    </ion-avatar>
+                    <ion-label>刘涛</ion-label>
+                    <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                  </ion-item>
+                  <ion-item class="share-item">
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/material/tx2.jpg">
+                    </ion-avatar>
+                    <ion-label>刘涛</ion-label>
+                    <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                  </ion-item>
+                  <ion-item class="share-item">
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/material/tx2.jpg">
+                    </ion-avatar>
+                    <ion-label>刘涛</ion-label>
+                    <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                  </ion-item>
+                  <ion-item class="share-item">
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/material/tx2.jpg">
+                    </ion-avatar>
+                    <ion-label>刘涛</ion-label>
+                    <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                  </ion-item>
+                  <ion-item class="share-item">
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/material/tx2.jpg">
+                    </ion-avatar>
+                    <ion-label>刘涛</ion-label>
+                    <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                  </ion-item>
+                  <ion-item class="share-item item item-block">
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/material/tx2.jpg">
+                      </ion-avatar>
+                      <ion-label>刘涛</ion-label>
+                      <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="share-item">
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/material/tx2.jpg">
+                      </ion-avatar>
+                      <ion-label>刘涛</ion-label>
+                      <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="share-item">
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/material/tx2.jpg">
+                      </ion-avatar>
+                      <ion-label>刘涛</ion-label>
+                      <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="share-item">
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/material/tx2.jpg">
+                      </ion-avatar>
+                      <ion-label>刘涛</ion-label>
+                      <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="share-item">
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/material/tx2.jpg">
+                      </ion-avatar>
+                      <ion-label>刘涛</ion-label>
+                      <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="share-item">
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/material/tx2.jpg">
+                      </ion-avatar>
+                      <ion-label>刘涛</ion-label>
+                      <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="share-item">
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/material/tx2.jpg">
+                      </ion-avatar>
+                      <ion-label>刘涛</ion-label>
+                      <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="share-item item item-block">
+                        <ion-avatar item-start>
+                          <img src="assets/imgs/material/tx2.jpg">
+                        </ion-avatar>
+                        <ion-label>刘涛</ion-label>
+                        <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                      </ion-item>
+                      <ion-item class="share-item">
+                        <ion-avatar item-start>
+                          <img src="assets/imgs/material/tx2.jpg">
+                        </ion-avatar>
+                        <ion-label>刘涛</ion-label>
+                        <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                      </ion-item>
+                      <ion-item class="share-item">
+                        <ion-avatar item-start>
+                          <img src="assets/imgs/material/tx2.jpg">
+                        </ion-avatar>
+                        <ion-label>刘涛</ion-label>
+                        <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                      </ion-item>
+                      <ion-item class="share-item">
+                        <ion-avatar item-start>
+                          <img src="assets/imgs/material/tx2.jpg">
+                        </ion-avatar>
+                        <ion-label>刘涛</ion-label>
+                        <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                      </ion-item>
+                      <ion-item class="share-item">
+                        <ion-avatar item-start>
+                          <img src="assets/imgs/material/tx2.jpg">
+                        </ion-avatar>
+                        <ion-label>刘涛</ion-label>
+                        <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                      </ion-item>
+                      <ion-item class="share-item">
+                        <ion-avatar item-start>
+                          <img src="assets/imgs/material/tx2.jpg">
+                        </ion-avatar>
+                        <ion-label>刘涛</ion-label>
+                        <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                      </ion-item>
+                      <ion-item class="share-item">
+                        <ion-avatar item-start>
+                          <img src="assets/imgs/material/tx2.jpg">
+                        </ion-avatar>
+                        <ion-label>刘涛</ion-label>
+                        <ion-checkbox  [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                      </ion-item>
+      
+    
+              </ion-list>
+            
+              
+      
+            </div>
+      
+      
+      
+      
+            <!-- --------------全部好友------------------------>
+            <div *ngSwitchCase="'all'" >
+             
+      
+              <ion-list>
+              
+                <ion-item class="share-item ">
+                  <ion-avatar item-start>
+                    <img src="assets/imgs/material/tx2.jpg">
+                  </ion-avatar>
+                  <ion-label>刘涛</ion-label>
+                  <ion-checkbox [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                </ion-item>
+                <ion-item class="share-item">
+                  <ion-avatar item-start>
+                    <img src="assets/imgs/material/tx5.jpg">
+                  </ion-avatar>
+                  <ion-label>林心如</ion-label>
+                  <ion-checkbox [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                </ion-item>
+                <ion-item class="share-item">
+                  <ion-avatar item-start>
+                    <img src="assets/imgs/material/tx6.jpg">
+                  </ion-avatar>
+                  <ion-label>邓紫棋</ion-label>
+                  <ion-checkbox [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                </ion-item>
+                <ion-item class="share-item">
+                  <ion-avatar item-start>
+                    <img src="assets/imgs/material/tx9.jpg">
+                  </ion-avatar>
+                  <ion-label>杨幂</ion-label>
+                  <ion-checkbox [(ngModel)]="pepperoni" item-right></ion-checkbox>
+                </ion-item>
+              
+              
+              
+              
+              </ion-list>
+
+            </div>
+          </div>
+        </div>
+        <!-- 固定内容 解决固定定位失效 -->
+      </div>
+
+
+  </ion-content>
+  <div   class="footer"> 
+
+      <ion-buttons >
+          <button ion-button button-only  (click)="goAffirm()" >
+            确认邀请对象
+            <!-- <ion-icon name="daohanglanchehui" style="font-size: 22px;"></ion-icon> -->
+          </button>
+        </ion-buttons>
+  </div>

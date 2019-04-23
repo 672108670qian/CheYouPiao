@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../assets/fonts/icomoon.eot?chgzgc');
+  src:  url('../assets/fonts/icomoon.eot?chgzgc#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon.ttf?chgzgc') format('truetype'),
+    url('../assets/fonts/icomoon.woff?chgzgc') format('woff'),
+    url('../assets/fonts/icomoon.svg?chgzgc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* .ion-dd:before,
+.ion-dd-r:before,
+.ion-dy:before,
+.ion-dy-r:before,
+.ion-sx:before, 
+.ion-sx-r:before,
+.ion-wd:before,
+.ion-wd-r:before,
+.ion-cyp-r:before, 
+.ion-cyp:before */
+.icomoon, .ion-ios-dd-outline:before,
+.ion-ios-dd:before,
+.ion-md-dd-r:before,
+.ion-md-dd:before,
+.ion-ios-dy-outline:before,
+.ion-ios-dy:before,
+.ion-md-dy-outline:before,
+.ion-md-dy:before,
+.ion-ios-sx-outing:before,
+.ion-ios-sx:before,
+.ion-md-sx-outing:before,
+.ion-md-sx:before,
+.ion-ios-wd-outline:before,
+.ion-ios-wd:before,
+.ion-md-wd-outline:before,
+.ion-md-wd:before,
+.ion-ios-cyp-outline:before,
+.ion-ios-cyp:before,
+.ion-md-cyp-outline:before,
+.ion-md-cyp:before{
+
+  /* use !important to prevent issues with browser extensions that change fonts */
+  
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-family: 'icomoon' !important;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+
+
+
+.ion-dd:before {
+  content: "\e900";
+  color: #4867f4;
+}
+.ion-dd-outline:before {
+  content: "\e901";
+  color: #898989;
+}
+.ion-dy:before {
+  content: "\e902";
+  color: #4867f4;
+}
+.ion-dy-outline:before {
+  content: "\e903";
+  color: #898989;
+}
+.ion-sx:before {
+  content: "\e904";
+  color: #4867f4;
+}
+.ion-sx-outline:before {
+  content: "\e905";
+  color: #898989;
+}
+.ion-wd:before {
+  content: "\e906";
+  color: #4867f4;
+}
+.ion-wd-outline:before {
+  content: "\e907";
+  color: #898989;
+}
+.ion-cyp-outline:before {
+  content: "\e908";
+  color: #898989;
+}
+.ion-cyp:before {
+  content: "\e909";
+  color: #4867f4;
+}

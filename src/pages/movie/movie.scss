@@ -1,0 +1,108 @@
+page-movie {
+    .sryy{
+        padding: 0px;
+   
+        ion-item{
+            margin-top: 8px;
+        }
+        .shadow{
+            font-family: "微软雅黑";
+            height: 100px;
+            width: 100%;
+            // background: blue;
+            // padding: 13px 12px 14px;
+            margin-bottom: 8px;
+            // .card-content-ios {
+            //     padding: 11px 12px 13px;
+            //     font-size: 1.4rem;
+            //     line-height: 1.4;
+            // }
+            ion-card-title{
+                margin: 0px;
+                padding: 0px;
+                h4{
+                    width: 80%;
+                //    background: red;
+                  font-size: 1.6rem;
+                  font-weight: bold;
+                  color: #333333;
+                  font-style: normal;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                 
+                }
+           
+                span{
+                    // display: block;
+                    font-size: 1.2rem;
+                    text-align:right;
+                    color: #4867f4;
+                    float: right;
+                    position: absolute;
+                    right: 12px;
+                    top: 15px;
+                    i{  font-size: 1.6rem;
+                        font-style:normal;
+                        font-weight: bold;
+
+                    }
+                }
+
+
+            }
+            p{
+
+                // background: green;
+                height: auto;
+                i{ 
+                    display: block;
+                    // background: yellow;
+                    width: 80%;
+                    height: auto;
+                    font-size: 1.3rem;
+                    margin: 2px 0px 2px;
+                    color: #666666;
+                
+                    //文字超过设定距离则省略
+                    font-style: normal;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    float: left;
+                }
+                span{
+                    // background: #38c4f2;
+                    font-size: 1.3rem;
+                    color: #999999;
+                    float: right;
+                    position: absolute;
+                    right: 12px;
+                    top : 42px;
+                                                      
+                }
+                
+            }
+            em{
+                font-size: 1.2rem;
+                color: #38c4f2;
+                font-style:normal;
+                border: 1px #9be1f8 solid;
+                border-radius:3px; 
+                padding: 0 1px;
+                
+
+            }
+            
+
+            .item-inner {
+                border: none;
+            }
+            
+        }
+      
+       
+    } 
+   
+ 
+}

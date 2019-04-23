@@ -1,0 +1,120 @@
+page-share {
+    ion-header{
+  
+        .toolbar .segment-md {
+          margin: 0 auto;
+          width: 1005;
+      }
+      ion-segment-button {
+          
+          em{
+            color: #fff;
+          }
+      }
+        
+          
+          ion-buttons{
+          
+            margin-top: 3px;
+            display: block;
+            float: right;
+            right: 12px;
+          }
+          .nav-icon{ 
+            display: block;
+            ion-icon{
+              font-size: 22rem;
+            }
+          }
+        
+      
+      }
+      ion-content{
+     
+        .scroll-content{
+          // background: red;
+          ion-segment {
+            background: #fff;
+       
+            ion-segment-button{
+              em{
+                color: #4867f4 !important;
+                font-weight: bold;
+              }
+            }
+          }
+
+
+        }
+        ion-segment {
+          background: #fff;
+          position: absolute;
+          z-index: 100;
+     
+          ion-segment-button{
+            em{
+              color: #4867f4 !important;
+              font-weight: bold;
+            }
+          
+          }
+    
+        }
+        .segment-md .segment-button {
+              
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+          border-bottom-color: rgba(0, 0, 0, 0.1);
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 4rem;
+          text-transform: uppercase;
+          color: #4867f4;
+         
+        }
+
+        .share-tishi{
+          display: block;
+          padding:5px 12px 5px 12px;
+          position: absolute;
+          top:45px;
+          z-index: 100;
+          
+          ion-icon{
+            font-size:1rem;
+          }
+          font-size:1.3rem; 
+          color:#999;
+        }
+
+      } 
+  
+        .share-item{
+          // border-bottom:1px solid #eee; 
+          ion-avatar{
+            img{
+              border-radius: 5px; 
+            }
+          }
+        }
+        
+      
+    
+    .footer{
+      ion-buttons{
+
+        width: 100%;
+        margin: 0px;
+        
+        button{
+          width: 100%;
+          margin: 0px;
+          border-radius: 0px; 
+           background: #38C4F2;
+        }
+     
+      }
+
+    }
+
+}
