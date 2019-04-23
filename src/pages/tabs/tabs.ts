@@ -4,7 +4,7 @@ import { Platform, Tabs } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
 import { MoviePage } from '../movie/movie';
-import { MessagePage } from '../message/message';
+import { ChatPage } from '../chat/chat';
 import { OrderPage } from '../order/order';
 import { SettingPage } from '../setting/setting';
 import { BackButtonService } from "../../services/backButton.service";
@@ -32,7 +32,7 @@ export class TabsPage {
         tabIcon: 'dy'
       },
       { 
-        root: MessagePage,
+        root: ChatPage,
         tabTitle: '私信',
         tabIcon: 'sx'
       },

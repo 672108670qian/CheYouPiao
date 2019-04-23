@@ -1,5 +1,5 @@
 <!--
-  Generated template for the OrderInfoPage page.
+  Generated template for the InvitedInfoPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,66 +7,73 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>邀请订单-已完成</ion-title>
+    <ion-title>应邀订单-已完成</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+
  
-<ion-content class="order-info-scroll">
-  <div class="order-info-tishi">
-    <p>
-      <ion-icon name="gonggao"></ion-icon>
-      已出票，表示本订单已完成~
-    </p>
-  </div>
-  <ion-card class="order-info-card1">
+<ion-content class="invited-info-scroll">
+
+  <ion-card class="invited-info-card1">
+    <div class="invited-info-tishi">
+      <p>
+        <ion-icon name="gonggao"></ion-icon>
+        已出票，表示本订单已完成~
+      </p>
+    </div>
     <ion-card-header>
-      <h3><i>07-06</i> <em>11:35</em>发起 - <i>5</i>位邀请对象 </h3>
+      <img src="assets/imgs/material/tx2.jpg" alt="">
+      <div class="invited-info-xinxi">
+        <h4>刘涛 
+          <span id="nv">
+            <ion-icon name="nv"></ion-icon>
+             36
+          </span>
+        </h4>
+     
+        <P>
+          <img src="assets/imgs/zl/re-c-jh.png" alt="">
+          <em>奥迪 </em>
+        </P>
+        <p>
+            <span>
+                <img src="assets/imgs/zl/sjrz.png">
+            </span>
+            <span>
+                <img src="assets/imgs/zl/sfrz.png">
+            </span>
+            <span>
+                <img src="assets/imgs/zl/czrz.png">
+            </span>
+            <span>
+                <img src="assets/imgs/zl/zfbrz.png">
+            </span>
+            <span>
+                <img src="assets/imgs/zl/wxrz.png">
+            </span>
+            <span>
+                <img src="assets/imgs/zl/wbrz.png">
+            </span>
+        </p>
+      </div>
     </ion-card-header>
     <ion-card-content>
-      <ion-slides  pager="false">
-        <ion-slide>
-            <img src="assets/imgs/material/tx2.jpg" alt="">
-            <span>已拒绝</span>
-            <p>刘涛</p>
-        </ion-slide>
-        <ion-slide>
-            <img src="assets/imgs/material/tx3.jpg" alt="">
-            <span class="yingyao">已应邀</span>
-            <p>刘昊然</p>
-         
-        </ion-slide>
-        <ion-slide>
-            <img src="assets/imgs/material/tx4.jpg" alt="">
-            <span>已拒绝</span>
-            <p>黄宗泽</p>
-        </ion-slide>
-        <ion-slide>
-            <img src="assets/imgs/material/tx5.jpg" alt="">
-            <span>已拒绝</span>
-            <p>林心如</p>
-        </ion-slide>
-        <ion-slide>
-            <img src="assets/imgs/material/tx6.jpg" alt="">
-            <span>已拒绝</span>
-            <p>邓紫棋</p>
-        </ion-slide>
-      </ion-slides>
-      <!-- <ion-slides pager="false">
-        <ion-slide *ngFor="let item of union;let i = index" tappable (click)="categoryList(i)">
-          <button ion-button [style.background-color]="colorArr[i]">{{item.name}}</button>
-        </ion-slide>
-      </ion-slides> -->
-
+      <p>
+        <ion-icon name="shijian"></ion-icon>
+        <em>12-17</em>
+        <i>11:35</i>发起邀请
+      </p>
+  
     </ion-card-content>
   </ion-card>
-  <ion-card class="order-info-card2">
+  <ion-card class="invited-info-card2">
     <ion-card-header>
       <h4>购买套餐</h4>
     </ion-card-header>
     <ion-card-content>
-      <div class="order-info-card2-div">
+      <div class="invited-info-card2-div">
           <p>2人舒适间</p>
           <p>有效期<i>2016-01-13</i>至<i>2018-07-15</i> </p>
           <p>星空私人影院</p>
@@ -76,9 +83,9 @@
 
     </ion-card-content>
   </ion-card>
-  <ion-card class="order-info-card3">
+  <ion-card class="invited-info-card3">
     <ion-card-header>
-      <div class="order-info-card3-div">
+      <div class="invited-info-card3-div">
         <p>票数量 &nbsp;：&nbsp;<i>1</i>张</p>
         <p>验证码 &nbsp;：&nbsp;<i>******</i></p>
       </div>
@@ -92,9 +99,9 @@
       </span>
     </ion-card-content>
   </ion-card>
-  <ion-card class="order-info-card4">
+  <ion-card class="invited-info-card4">
     <ion-card-header>
-      <div class="order-info-card4-div">
+      <div class="invited-info-card4-div">
           <h4>某私人影院名称</h4>
           <p>
             <ion-icon name="dizhi"></ion-icon>
@@ -112,7 +119,7 @@
       <p>AB制付款&nbsp;：&nbsp;我付<i>77</i>元，对方付<em>1</em>元</p>
     </ion-card-content>
   </ion-card>
-  <ion-card class="order-info-card5">
+  <ion-card class="invited-info-card5">
     <ion-card-header>
       在线客服
     </ion-card-header>
@@ -124,7 +131,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card class="order-info-card6 xuzhi">
+  <ion-card class="invited-info-card6 xuzhi">
       <ion-card-header>
           <h3>购票须知</h3>
       </ion-card-header>
@@ -151,19 +158,15 @@
                   (2)邀请方发出邀请信息后，应邀方选择拒绝应邀TA。<br/>
                   (3)当邀请方选择多个邀请对象时，应邀方遵从时间优先原则，第一时间确认应邀的对象应邀成功后，即预约成功。其他应邀对象的邀请信息过期，无法应邀。
               </p>
-            
-            
-      
       </ion-card-content>
   </ion-card>
 
 </ion-content>
-<div   class="footer order-info-button"> 
+<div class="footer invited-info-button"> 
 
-  <ion-buttons class="order-info-button">
+  <ion-buttons class="invited-info-button">
       <button ion-button button-only   >
           私信
-        <!-- <ion-icon name="daohanglanchehui" style="font-size: 22px;"></ion-icon> -->
       </button>
     </ion-buttons>
 </div>

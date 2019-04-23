@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
 import { InvitationPage } from '../invitation/invitation';
-
+import { InvitedPage } from '../invited/invited';
 
 /**
  * Generated class for the OrderPage page.
@@ -39,4 +39,8 @@ export class OrderPage {
   }
 
 
+  //跳转至应邀订单页面
+  goinvited(){
+    this.navCtrl.push(InvitedPage);
+  }
 }

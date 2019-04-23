@@ -52,7 +52,7 @@ export class SharePage {
 
   //跳转确认订单页面
   goAffirm(){
-this.navCtrl.push(AffirmPage);
+    this.navCtrl.push(AffirmPage);
   }
 
 }

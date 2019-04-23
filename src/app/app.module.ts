@@ -17,16 +17,20 @@ import { VerificationPage } from '../pages/verification/verification';//验证�
 import { HomePage } from '../pages/home/home';//车有票
 import { TabsPage } from '../pages/tabs/tabs';//tabs
 import { MoviePage } from '../pages/movie/movie';//看电影
-import { MessagePage } from '../pages/message/message';//私信
+import { ChatPage } from '../pages/chat/chat';//私信
+import { MessagePage } from '../pages/message/message';//私信——>聊天界面
 import { OrderPage } from '../pages/order/order'//订单
 import { SettingPage } from '../pages/setting/setting';//我的
-import { ChatPage } from '../pages/chat/chat';//聊天
+// import { ChatPage } from '../pages/chat/chat';//聊天
 import { PersonPage } from '../pages/person/person';//头像——>个人资料界面
-import { OrderInfoPage } from '../pages/order-info/order-info';//订单——>订单详情
-import { InvitationPage } from '../pages/invitation/invitation';//订单——>应邀订单
+
+import { InvitationPage } from '../pages/invitation/invitation';//订单——>邀请订单
+import { OrderInfoPage } from '../pages/order-info/order-info';//邀请订单——>邀请订单详情
+import { InvitedPage } from '../pages/invited/invited';//订单——>应邀订单
+import { InvitedInfoPage } from '../pages/invited-info/invited-info';//应邀订单——>应邀订单详情
 
 import { MaterialPage } from '../pages/material/material';//我的——>用户资料
-import { MovieInfoPage } from '../pages/Movie-info/Movie-info';//私人影院——>私人影院套餐
+import { MovieInfoPage } from '../pages/movie-info/movie-info';//私人影院——>私人影院套餐
 import { DetailsPage } from '../pages/details/details';//私人影院套餐——>套餐详情
 import { SharePage } from '../pages/share/share';//套餐详情——>分享他人
 import { AffirmPage } from '../pages/affirm/affirm';//分享他人——>确认订单
@@ -40,16 +44,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { PipesModule } from '../pipes/pipes.module';
 import { ChatPageModule } from '../pages/chat/chat.module';
+import { MessagePageModule } from '../pages/message/message.module';
 import { PersonPageModule } from '../pages/person/person.module';
 import { DetailsPageModule } from '../pages/details/details.module';
 import { OrderInfoPageModule } from '../pages/order-info/order-info.module';
-import { MovieInfoPageModule } from '../pages/Movie-info/Movie-info.module';
+import { MovieInfoPageModule } from '../pages/movie-info/movie-info.module';
+import { InvitedInfoPageModule } from '../pages/invited-info/invited-info.module';//应邀订单——>应邀订单详情
 import { SharePageModule } from '../pages/share/share.module';
 import { MaterialPageModule } from '../pages/material/material.module';
 import { AffirmPageModule } from '../pages/affirm/affirm.Module';//分享他人——>确认订单
 import { PaymentPageModule } from '../pages/payment/payment.module';//确认订单——>待付款
 import { FinishPageModule } from '../pages/finish/finish.module';//待付款——>完成邀请
 import { InvitationPageModule } from '../pages/invitation/invitation.Module';//订单——>应邀订单
+import { InvitedPageModule } from '../pages/invited/invited.Module';//订单——>应邀订单
 
 // import { EmojiProvider } from '../providers/emoji/emoji';
 // import { ChatService } from '../providers/chat-service/chat-service';
@@ -65,12 +72,11 @@ import { InvitationPageModule } from '../pages/invitation/invitation.Module';//�
     HomePage,
     TabsPage,
     MoviePage,
-    MessagePage,
+    
     OrderPage,
     SettingPage,
     LoginPage,
     RegisterPage,
-    MovieInfoPage,
     VerificationPage
    
   ],
@@ -78,6 +84,7 @@ import { InvitationPageModule } from '../pages/invitation/invitation.Module';//�
   imports: [
     BrowserModule,  HttpModule,PipesModule,
     ChatPageModule,
+    MessagePageModule,
     DetailsPageModule,
     MaterialPageModule,
     PersonPageModule,
@@ -87,6 +94,9 @@ import { InvitationPageModule } from '../pages/invitation/invitation.Module';//�
     PaymentPageModule,
     FinishPageModule,
     InvitationPageModule,
+    InvitedPageModule,
+    MovieInfoPageModule,
+    InvitedInfoPageModule,
 
     // MovieInfoPageModule,
     IonicModule.forRoot(MyApp,{
@@ -121,6 +131,8 @@ import { InvitationPageModule } from '../pages/invitation/invitation.Module';//�
     OrderPage,
     OrderInfoPage,
     InvitationPage,
+    InvitedPage,
+    InvitedInfoPage,
     
     DetailsPage,
     AffirmPage,

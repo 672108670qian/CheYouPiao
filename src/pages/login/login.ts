@@ -17,6 +17,7 @@ import { RegisterPage } from '../register/register';
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
+
 })
 export class LoginPage {
     RegisterPage;

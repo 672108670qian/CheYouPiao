@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,PopoverController,ModalController } from 'ionic-angular';
 import { Http, Response } from '@angular/http';
-import { PersonPage } from '../person/person'
+
+import { PersonPage } from '../person/person';
+import { FiltratePage } from '../filtrate/filtrate';
+
+
 
 @Component({
   
@@ -21,7 +25,11 @@ export class HomePage {
 
     ];
   //注入依赖
-  constructor(public navCtrl: NavController,private http:Http) {
+  constructor(public navCtrl: NavController,
+              public popoverCtrl: PopoverController,
+              public modalCtrl: ModalController,//构造控制器
+              private http:Http
+    ) {
 
   }
   
@@ -58,26 +66,15 @@ export class HomePage {
 //九宫格参考网址https://blog.csdn.net/bigname22/article/details/78812986
 
 
-  //  //邀请，身份弹框验证
-  //  Alertshenfen() {
-  //   let alert = this.alertCtrl.create({
-  //     title: '朋友!',
-  //     subTitle: '分享了解一下？',
-  //     buttons: [
-  //       {
-  //         text: '知道了',
-  //         handler: data => {
-  //           console.log('Cancel clicked');
-  //         }
-  //       },
-  //       {
-  //         text: '去认证',
-  //         handler: data => {
-  //           console.log('Saved clicked');
-  //         }
-  //       }
-  //     ]
-  //   });
-  //   alert.present();
-  // }
+
+  //筛选弹框 这里使用modal方法
+
+
+  openModal(){
+
+    let modal = this.modalCtrl.create(FiltratePage);//创建新的页面——ModalPage
+    modal.present();//页面展示
+  
+   }
+
   }

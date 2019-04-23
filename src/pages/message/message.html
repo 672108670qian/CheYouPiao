@@ -1,17 +1,128 @@
+
+
+<ion-header>
+    <ion-navbar>
+      <ion-title></ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <!-- 我是聊天记录 -->
+    <div  class="message-wrapper">
+      <!-- 判断消息是对方发送的 -->
+      <div class="ceshi" >
+        <img  class="profile-pic left" src="assets/imgs/material/tx2.jpg" /> 
+        <!--  wave-->
+        <div class="chat-bubble left slide-left">
+          <div class="message"autolinker>你最近干嘛呢hjuyhdwgcxuyigsauycxgewuycxgewuydxcgy8wg</div>
+          <div class="message-detail">
+            <span class="bold">我是对方昵称</span>
+            <span>我是时间</span>
+          </div>
+        </div>
+        <div class="cf"></div>
+      </div>
+  
+      <!-- 判断消息是自己发送的 -->
+      <div class="ceshi" >
+        <img class="profile-pic right" src="assets/imgs/material/tx.jpg" />
+        <div class="chat-bubble right slide-right">
+          <div class="message"  autolinker>我现在可忙了，天天都在跑业务dnbhklwjucgxhui8wegch7iuewgchuxigedwuicgeudwgcouyiewgco8ewy</div>
+          <div class="message-detail">
+            <span  class="bold">我是本人昵称</span>
+            <span>我是时间</span>
+          </div>
+        </div>
+        <div class="cf"></div>
+      </div>
+
+
+      <div class="ceshi" >
+          <img  class="profile-pic left" src="assets/imgs/material/tx2.jpg" /> 
+          <!--  wave-->
+          <div class="chat-bubble left slide-left">
+            <div class="message"autolinker>你最近干嘛呢hjuyhdwgcxuyigsauycxgewuycxgewuydxcgy8wg</div>
+            <div class="message-detail">
+              <span class="bold">我是对方昵称</span>
+              <span>我是时间</span>
+            </div>
+          </div>
+          <div class="cf"></div>
+        </div>
+    
+        <!-- 判断消息是自己发送的 -->
+        <div class="ceshi" >
+          <img class="profile-pic right" src="assets/imgs/material/tx.jpg" />
+          <div class="chat-bubble right slide-right">
+            <div class="message"  autolinker>我现在可忙了，天天都在跑业务dnbhklwjucgxhui8wegch7iuewgchuxigedwuicgeudwgcouyiewgco8ewy</div>
+            <div class="message-detail">
+              <span  class="bold">我是本人昵称</span>
+              <span>我是时间</span>
+            </div>
+          </div>
+          <div class="cf"></div>
+        </div>
+      
+
+    
+ 
+      <div class="cf"></div>
+    </div>
+  </ion-content> 
+  
+  <!-- 底部固定的输入框 -->
+  <ion-footer>
+    <form  novalidate>
+      <ion-item>
+        <ion-input  placeholder="发送信息"></ion-input>
+        <button ion-button clear  item-end><ion-icon class="footer-btn" name="send"></ion-icon></button>
+      </ion-item>
+    </form>
+  </ion-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
   Generated template for the MessagePage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header mode="md">
+<!-- <ion-header mode="md">
   <ion-navbar>
-    <ion-title>私信</ion-title>
+    <ion-title>私信</ion-title> -->
     <!--<ion-buttons right>-->
 <!--      <button ion-button icon-only (click)="onShowSideMenu()">
         <ion-icon name="md-menu">显示</ion-icon>
       </button>-->
-      <ion-buttons end>
+      <!-- <ion-buttons end>
         <button ion-button icon-only color="light" (click)="onShowSideMenu()">
           <ion-icon name="md-menu"></ion-icon>
         </button>
@@ -20,7 +131,7 @@
   </ion-navbar>
 
 
-</ion-header>
+</ion-header> -->
 
 
 
@@ -173,13 +284,13 @@
     </ion-slide>-->
 
 <!-- </ion-content> -->
-<ion-content class="chats">
+<!-- <ion-content class="chats"> -->
 
   <!-- 显示今天的消息 -->
-  <ion-list>
-    <ion-list-header>今天</ion-list-header>
+  <!-- <ion-list>
+    <ion-list-header>今天</ion-list-header> -->
     <!-- 点击的时候跳转界面 -->
-    <ion-item *ngFor="let message of messages" (click)="goChatPage()">
+    <!-- <ion-item *ngFor="let message of messages" (click)="goChatPage()">
       <ion-avatar item-start>
         <img [src]="message.imageUrl">
       </ion-avatar>
@@ -232,5 +343,5 @@
   </ion-list>
   <a  (click)="goChatPage()">前往下一页>传参</a>
 
-</ion-content>
+</ion-content> -->
 

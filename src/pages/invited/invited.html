@@ -1,0 +1,317 @@
+<!--
+  Generated template for the InvitedPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>应邀订单</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <!-- <ion-toolbar> -->
+    <ion-segment class="ion-segment-bule " [(ngModel)]="invited" mode="md">
+      <ion-segment-button value="all">
+        <em>全部</em>
+  
+      </ion-segment-button>
+      <ion-segment-button value="weiYingYao">
+        <em>未应邀</em>
+  
+      </ion-segment-button>
+      <ion-segment-button value="daiXiaoFei">
+        <em>待消费</em>
+  
+      </ion-segment-button>
+      <ion-segment-button value="yiGuoQI">
+        <em>已过期</em>
+  
+      </ion-segment-button>
+      <ion-segment-button value="TuiKuan">
+        <em>退款/售后</em>
+  
+      </ion-segment-button>
+
+    </ion-segment>
+
+
+
+
+
+    <div class="fixed-content" style="margin-top: 0px; ">
+    </div>
+    <div class="scroll-content" style=" margin-top: 40px; ">
+
+    <div (swipe)="swipeEvent($event)"   >
+        <div [ngSwitch]="invited">
+          <!-----------------------全部订单----------------------->
+          <div *ngSwitchCase="'all'">
+       
+            <ion-list class="invited-list">
+       
+              <ion-item class="invited-item relative item-button "   >
+                  <ion-card-title>
+                    <img src="assets/icon/user.jpg" alt="">
+                      <!-- //邀请对象名称 -->
+                    <h4><i>n</i>位对象- <em>11:30</em>发起 </h4>
+                    <span class="absolute " id="weiyingyao">未应邀</span>
+                  </ion-card-title>
+                  <div class="invited-iteminfo " (click)="goInvitedInfo()">
+                      <img src="assets/imgs/move/move13.jpg" alt="">
+                      <div class="invited-xinxi">
+                        <h3>电影名称</h3>
+                        <p>
+                            <!-- //电影院地址 -->
+                          <i>影院：</i>
+                           
+                          <span>影院名称</span>
+                        </p>
+                        
+                        <p>
+                            <!-- 电影总价 -->
+                          <i>总价：</i>
+                           
+                          <span>邀请电影总票价</span>
+                        </p>
+                        <p>
+                            <!-- 付款制度 -->
+                          <i>AB制：</i>
+                           
+                          <span>我付多，对方付少</span>
+                        </p>
+          
+                      </div>
+                    </div>
+                    <div class="invited-button">
+                      <button>
+                        拒绝TA
+                      </button>
+                      <button>
+                        私信
+                      </button>
+                      <button>
+                        应邀TA
+                      </button>
+                    </div>
+                
+                </ion-item>
+                <ion-item class="invited-item item-button relative " >
+                    <ion-card-title>
+                      <img src="assets/icon/user.jpg" alt="">
+                        <!-- //邀请对象名称 -->
+                      <h4>wwww</h4>
+                      <span class="absolute" id="xiaofei">待消费</span>
+                    </ion-card-title>
+                    <div class="invited-iteminfo ">
+                        <img src="assets/imgs/move/move13.jpg" alt="">
+                        <div class="invited-xinxi">
+                          <h3>电影名称</h3>
+                          <p>
+                              <!-- //电影院地址 -->
+                            <i>影院：</i>
+                             
+                            <span>影院名称</span>
+                          </p>
+                          
+                          <p>
+                              <!-- 电影总价 -->
+                            <i>总价：</i>
+                             
+                            <span>邀请电影总票价</span>
+                          </p>
+                          <p> 
+                              <!-- 付款制度 -->
+                            <i>AB制：</i>
+                             
+                            <span>我付多，对方付少</span>
+                          </p>
+            
+                        </div>
+                      </div>
+                      <div class="invited-button">
+                        <button>
+                          私信
+                        </button>
+                        <button>
+                          请求取票
+                        </button>
+                      
+                      </div>
+                  </ion-item>
+          
+                <ion-item class="invited-item item-button item-text-warp  relative" >
+                    <ion-card-title>
+                      <img src="assets/icon/user.jpg" alt="">
+                        <!-- //邀请对象名称 -->
+                      <h4>刘涛</h4>
+                      
+                      <span class="absolute" id="wancheng" >已完成</span>
+                    </ion-card-title>
+                    <div class="invited-iteminfo ">
+                      <img src="assets/imgs/move/move13.jpg" alt="">
+                      <div class="invited-xinxi">
+                        <h3>电影名称</h3>
+                        <p>
+                            <!-- //电影院地址 -->
+                          <i>影院：</i>
+                           
+                          <span>影院名称</span>
+                        </p>
+                        
+                        <p>
+                            <!-- 电影总价 -->
+                          <i>总价：</i>
+                           
+                          <span>邀请电影总票价</span>
+                        </p>
+                        <p> 
+                            <!-- 付款制度 -->
+                          <i>AB制：</i>
+                           
+                          <span>我付多，对方付少</span>
+                        </p>
+          
+                      </div>
+                    </div>
+                    <div class="invited-button">
+                  
+                      <button>
+                        私信
+                      </button>
+                  </div>
+                    
+                
+                  </ion-item>
+
+                  <ion-item class="invited-item item-button item-text-warp  relative" >
+                    <ion-card-title>
+                      <img src="assets/icon/user.jpg" alt="">
+                        <!-- //邀请对象名称 -->
+                      <h4>刘涛</h4>
+                      
+                      <span class="absolute" id="guoqi" >已过期</span>
+                    </ion-card-title>
+                    <div class="invited-iteminfo ">
+                      <img src="assets/imgs/move/move13.jpg" alt="">
+                      <div class="invited-xinxi">
+                        <h3>电影名称</h3>
+                        <p>
+                            <!-- //电影院地址 -->
+                          <i>影院：</i>
+                           
+                          <span>影院名称</span>
+                        </p>
+                        
+                        <p>
+                            <!-- 电影总价 -->
+                          <i>总价：</i>
+                           
+                          <span>邀请电影总票价</span>
+                        </p>
+                        <p> 
+                            <!-- 付款制度 -->
+                          <i>AB制：</i>
+                           
+                          <span>我付多，对方付少</span>
+                        </p>
+          
+                      </div>
+                    </div>
+                    <div class="invited-button">
+                      
+                      <button>
+                        私信
+                      </button>
+                  </div>
+                
+                  </ion-item>
+
+                  <ion-item class="invited-item item-text-warp item-button relative" >
+                    <ion-card-title>
+                      <img src="assets/icon/user.jpg" alt="">
+                      <!-- //邀请对象名称 -->
+                      <h4>刘涛</h4>
+                    
+                      <span class="absolute" id="tuikuan">退款中</span>
+                    </ion-card-title>
+                    <div class="invited-iteminfo ">
+                      <img src="assets/imgs/move/move13.jpg" alt="">
+                      <div class="invited-xinxi">
+                        <h3>电影名称</h3>
+                        <p>
+                          <!-- //电影院地址 -->
+                          <i>影院：</i>
+                    
+                          <span>影院名称</span>
+                        </p>
+                    
+                        <p>
+                          <!-- 电影总价 -->
+                          <i>总价：</i>
+                    
+                          <span>邀请电影总票价</span>
+                        </p>
+                        <p>
+                          <!-- 付款制度 -->
+                          <i>AB制：</i>
+                    
+                          <span>我付多，对方付少</span>
+                        </p>
+                    
+                      </div>
+                    </div>
+                    
+                    <div class="invited-button ">
+                      <button>
+                        退款详情
+                      </button>
+                    </div>
+                </ion-item>
+          
+          
+                  
+            
+            
+            </ion-list>
+
+          </div>
+
+          <!-- --------------待应邀------------------------>
+          <div *ngSwitchCase="'weiYingYao'">
+          
+            <h1>我是待应邀界面</h1>
+
+          </div>
+          <!-- --------------待消费------------------------>
+          <div *ngSwitchCase="'daiXiaoFei'">
+          
+            <h1>我是待消费界面</h1>
+
+          </div>
+          <!-- --------------已过期------------------------>
+          <div *ngSwitchCase="'yiGuoQI'">
+          
+            <h1>我是已过期界面</h1>
+          
+          
+          </div>
+          <!-- --------------退款/售后----------------------->
+          <div *ngSwitchCase="'TuiKuan'">
+          
+            <h1>我是退款/售后界面</h1>
+          
+          
+          </div>
+        </div>
+      </div>
+      <!-- 固定内容 解决固定定位失效 -->
+    </div>
+
+</ion-content>
+

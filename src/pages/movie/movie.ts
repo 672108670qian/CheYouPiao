@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { MovieInfoPage } from '../Movie-info/Movie-info';
+import { MovieInfoPage } from '../movie-info/movie-info';
 
 /**
  * Generated class for the MoviePage page.

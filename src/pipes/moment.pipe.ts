@@ -2,7 +2,7 @@ import { Pipe } from '@angular/core';
 import moment from 'moment';
 
 @Pipe({
-  name: 'moment'
+  name: 'moment',
 })
 export class MomentPipe {
   transform(value, args) {

@@ -1,19 +1,4 @@
-<!-- <ion-header>
-  <ion-navbar>
-    <ion-title>附近动态</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  <ion-list *ngFor="let item of listData"> 
-    <ion-item> 
-      <ion-avatar item-left> 
-        <img [src]="item?.url"> 
-      </ion-avatar> 
-         {{item?.title}} 
-      </ion-item> 
-    </ion-list>
-  </ion-content> -->
 
 
   <ion-header mode="md">
@@ -36,8 +21,13 @@
       </ion-segment>
       
      <ion-buttons right class="nav-icon absolute"  >
-        <button ion-button icon-only  (click)="goInvitation()" >
+        <button ion-button icon-only  (click)="openFiltrate($event)" >
           <ion-icon name="daohanglanshaixuan"style="font-size: 22px;"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-buttons left class=" "  >                                                                                                                         
+        <button ion-button icon-only  (click)="openModal()" >
+          <ion-icon name="home"style="font-size: 22px;"></ion-icon>
         </button>
       </ion-buttons>
     </ion-navbar>
@@ -104,7 +94,7 @@
                 <button >
                   <ion-icon name="mail"> 私信</ion-icon>
                 </button>
-              </div>
+              </div>                    
             </div>
           </ion-card>
           <ion-card class="dongtai relative">
